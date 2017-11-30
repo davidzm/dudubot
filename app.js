@@ -1,5 +1,6 @@
 var Discord = require("discord.js");
 var bot = new Discord.Client();
+var today = new Date();
 
 bot.on('ready', () => {
     console.log('I am ready');
@@ -7,6 +8,10 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
     if(message.content === 'ping') {
+        message.reply('pong');
+        message.author.sendMessage("holis");
+    }
+    if(message.content === 'pruebita') {
         message.reply('pong');
         message.author.sendMessage("holis");
     }
