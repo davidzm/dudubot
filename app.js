@@ -11,9 +11,9 @@ bot.on('message', message => {
         message.reply('pong');
         message.author.sendMessage("holis");
     }
-    if(message.content === 'pruebita') {
-        message.reply('pong');
-        message.author.sendMessage("holis");
+    if(message.content === 'feliz' || message.content === 'amor') {
+        message.reply('Mira tus mensajes privados ;)');
+        message.author.sendMessage("Ahora visita acá: https://month3.herokuapp.com/");
     }
 });
 
