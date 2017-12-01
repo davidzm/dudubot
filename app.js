@@ -19,13 +19,13 @@ bot.on('message', message => {
     	message.author.sendMessage("test");
     	message.author.sendMessage("mensaje es: " + message.author);
     	message.author.sendMessage("mensaje es: " + message.author.username);
-    	message.author.sendMessage("mensaje es: " + message.author.name);
-    	message.author.sendMessage("mensaje es: " + message.author.mention);
+    	message.author.sendMessage("mensaje es: " + message.author.id);
+    	message.author.sendMessage("mensaje es: " + message.author.tag);
     	message.reply(message.author);
-    	message.reply(message.author.nick);
-    	message.reply(message.author.name);
-    	message.reply(message.author.mention);
-    	message.reply("version1");
+    	message.reply(message.author.username);
+    	message.reply(message.author.id);
+    	message.reply(message.author.tag);
+    	message.reply("version2");
     }
 });
 
