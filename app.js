@@ -11,12 +11,11 @@ bot.on('message', message => {
         message.reply('pong');
         message.author.sendMessage("holis");
     }
-    if(message.content === 'feliz' || message.content === 'amor') {
-    	if(message.author.username == "Chiprel") {
+    if(message.content === 'mes' || message.content === 'mes' || message.content === 'Feliz' || message.content === 'feliz' || message.content === 'amor') {
+    	if(message.author.username == "Nakha") {
     		message.reply('Mira tus mensajes privados ;)');
         	message.author.sendMessage("Ahora visita acá: https://month3.herokuapp.com/");
     	}
-    	message.reply("version3");
     }
 });
 
