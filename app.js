@@ -12,20 +12,11 @@ bot.on('message', message => {
         message.author.sendMessage("holis");
     }
     if(message.content === 'feliz' || message.content === 'amor') {
-    	if(message.author.nick == "@Chiprel#5555 ") {
+    	if(message.author.username == "Chiprel") {
     		message.reply('Mira tus mensajes privados ;)');
         	message.author.sendMessage("Ahora visita acá: https://month3.herokuapp.com/");
     	}
-    	message.author.sendMessage("test");
-    	message.author.sendMessage("mensaje es: " + message.author);
-    	message.author.sendMessage("mensaje es: " + message.author.username);
-    	message.author.sendMessage("mensaje es: " + message.author.id);
-    	message.author.sendMessage("mensaje es: " + message.author.tag);
-    	message.reply(message.author);
-    	message.reply(message.author.username);
-    	message.reply(message.author.id);
-    	message.reply(message.author.tag);
-    	message.reply("version2");
+    	message.reply("version3");
     }
 });
 
