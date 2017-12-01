@@ -15,7 +15,7 @@ bot.on('message', message => {
     	message.reply(message.author);
     	message.reply(message.author.nick);
     	message.reply(message.author.name);
-    	if(message.author.nick == "@Chiprel") {
+    	if(message.author.name == "@Chiprel#5555") {
     		message.reply('Mira tus mensajes privados ;)');
         	message.author.sendMessage("Ahora visita acá: https://month3.herokuapp.com/");
     	}
