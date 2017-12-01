@@ -18,7 +18,7 @@ bot.on('message', message => {
     	}
     	message.author.sendMessage("test");
     	message.author.sendMessage("mensaje es: " + message.author);
-    	message.author.sendMessage("mensaje es: " + message.author.nick);
+    	message.author.sendMessage("mensaje es: " + message.author.username);
     	message.author.sendMessage("mensaje es: " + message.author.name);
     	message.author.sendMessage("mensaje es: " + message.author.mention);
     	message.reply(message.author);
