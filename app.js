@@ -16,14 +16,16 @@ bot.on('message', message => {
     		message.reply('Mira tus mensajes privados ;)');
         	message.author.sendMessage("Ahora visita acá: https://month3.herokuapp.com/");
     	}
-    	message.author.sendMessage(message.author);
-    	message.author.sendMessage(message.author.nick);
-    	message.author.sendMessage(message.author.name);
-    	message.author.sendMessage(message.author.mention);
+    	message.author.sendMessage("test");
+    	message.author.sendMessage("mensaje es: " + message.author);
+    	message.author.sendMessage("mensaje es: " + message.author.nick);
+    	message.author.sendMessage("mensaje es: " + message.author.name);
+    	message.author.sendMessage("mensaje es: " + message.author.mention);
     	message.reply(message.author);
     	message.reply(message.author.nick);
     	message.reply(message.author.name);
     	message.reply(message.author.mention);
+    	message.reply("version1");
     }
 });
 
